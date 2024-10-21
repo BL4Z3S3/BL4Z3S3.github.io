@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* Texto en blanco */
+}
+
+header {
+    background-color: #000000; /* Fondo negro */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FF6600; /* Naranja */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #FFFFFF; /* Texto en blanco */
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero .btn {
+    background-color: #FF6600; /* Naranja */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about, .products, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #000000; /* Fondo negro */
+}
+
+h2 {
+    color: #FF6600; /* Naranja para títulos */
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+    padding: 20px;
+    border: 1px solid #FF6600; /* Borde naranja */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item .btn {
+    background-color: #FF6600; /* Botón naranja */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 10px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #000000; /* Fondo negro */
+    color: #FF6600; /* Texto naranja */
+    text-align: center;
+    padding: 10px 0;
+}
+
+button{
+    background-color: #FF6600; /* Botón naranja */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}

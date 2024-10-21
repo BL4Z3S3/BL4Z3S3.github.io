@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar y Envío - Chlorine</title>
+    <link rel="stylesheet" href="stylesCompra.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" onclick="borrar()">Inicio</a></li>
+                <li><a href="../index.html" onclick="borrar()">Productos</a></li>
+                <li><a href="../index.html" onclick="borrar()">Pago y Envío</a></li>
+                <li><a href="../index.html" onclick="borrar()">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- imagen-->
+    <img id="miImagen" src="">
+    <div>
+        <button>XS</button>
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+        <button>XXL</button>    
+    </div>
+
+    <!-- Sección Pago y Envío -->
+    <section id="pago-envio" class="payment">
+        <h1>Información de Pago y Envío</h1>
+
+        <!-- Formulario de envío -->
+        <h2>Detalles de Envío</h2>
+        <form action="procesar-envio.php" method="post">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais" required>
+            
+            <label for="codigo-postal">Código Postal</label>
+            <input type="text" id="codigo-postal" name="codigo-postal" required>
+            
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </form>
+
+        <!-- Formulario de pago -->
+        <h2>Detalles de Pago</h2>
+        <form action="procesar-pago.php" method="post">
+            <label for="tipo-tarjeta">Tipo de Tarjeta</label>
+            <select id="tipo-tarjeta" name="tipo-tarjeta" required>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+            </select>
+            
+            <label for="numero-tarjeta">Número de Tarjeta</label>
+            <input type="text" id="numero-tarjeta" name="numero-tarjeta" required>
+            
+            <label for="fecha-expiracion">Fecha de Expiración</label>
+            <input type="month" id="fecha-expiracion" name="fecha-expiracion" required>
+            
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+            
+            <button type="submit" class="btn">Procesar Pago</button>
+        </form>
+    </section>
+
+    <br>
+    <br>
+    <button type="button" onclick="mostrar()">mostrar</button>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Chlorine. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../compraInteraccion.js"></script>
+
+</body>
+</html>
